@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        darkred: { DEFAULT: "#1A0000" },
+        darkred: { DEFAULT: "#120000" },
       },
     },
   },
