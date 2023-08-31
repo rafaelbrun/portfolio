@@ -1,6 +1,6 @@
 import type { NavbuttonProps } from "~/interfaces/navbutton";
 
-export default function Navbutton({ title, onClick }: NavbuttonProps) {
+export default function NavButton({ title, onClick }: NavbuttonProps) {
   const ref = `#${title.toLowerCase()}`;
 
   return (

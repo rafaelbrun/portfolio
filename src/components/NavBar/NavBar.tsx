@@ -1,6 +1,6 @@
 import { useCallback, useMemo, useState } from "react";
-import Navbutton from "./navbutton";
-import ThemeButton from "./themebutton";
+import Navbutton from "./NavButton";
+import ThemeButton from "./ThemeButton";
 import { HiMenu } from "react-icons/hi";
 import { CgClose } from "react-icons/cg";
 
@@ -10,7 +10,7 @@ const NAVBAR_DEFAULT =
 const NAVBAR_MENU =
   "fixed top-0 right-0 flex flex-col h-full px-8 opacity-90 sm:justify-center sm:right-1 sm:flex-row sm:w-full sm:h-auto lg:justify-end lg:px-72";
 
-export default function Navbar() {
+export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const openMenu = useCallback(() => {
