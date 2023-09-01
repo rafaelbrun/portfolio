@@ -21,15 +21,8 @@ export default function NavBar() {
     setIsMenuOpen(false);
   }, []);
 
-  const onClickTest = (tab: string) => {
-    //TODO: navigate to reference
-    console.log(`Navigate to ${tab}`);
-  };
-
   const ListOfNavbuttons = useMemo(() => {
-    return TABS.map((tab) => (
-      <Navbutton title={tab} onClick={() => onClickTest(tab)} key={tab} />
-    ));
+    return TABS.map((tab) => <Navbutton title={tab} key={tab} />);
   }, []);
 
   return (
