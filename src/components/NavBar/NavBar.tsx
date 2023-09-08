@@ -26,7 +26,7 @@ export default function NavBar() {
   }, []);
 
   return (
-    <div className={isMenuOpen ? NAVBAR_MENU : NAVBAR_DEFAULT}>
+    <div className={isMenuOpen ? NAVBAR_MENU : NAVBAR_DEFAULT} role="menubar">
       <div className={"hidden sm:flex"}>{ListOfNavbuttons}</div>
       <div className="flex flex-row">
         <ThemeButton />

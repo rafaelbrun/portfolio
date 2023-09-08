@@ -17,11 +17,16 @@ export default function ThemeButton() {
 
   const CurrentIcon = useMemo(() => {
     return theme == "dark" ? (
-      <FiMoon onClick={toggleTheme} className="h-8 w-8 my-4 cursor-pointer" />
+      <FiMoon
+        onClick={toggleTheme}
+        className="my-4 h-8 w-8 cursor-pointer"
+        role="button"
+      />
     ) : (
       <BsSun
         onClick={toggleTheme}
-        className="h-8 w-8 my-4 cursor-pointer text-darkred"
+        className="my-4 h-8 w-8 cursor-pointer text-darkred"
+        role="button"
       />
     );
   }, [theme, toggleTheme]);
