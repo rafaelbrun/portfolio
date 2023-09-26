@@ -1,6 +1,6 @@
 import Navbar from "./NavBar/NavBar";
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <Navbar />
@@ -8,3 +8,5 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     </>
   );
 }
+
+export default Layout;
