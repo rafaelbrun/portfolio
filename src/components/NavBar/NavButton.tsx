@@ -1,6 +1,6 @@
 import type { NavbuttonProps } from "~/interfaces/NavButton";
 
-export default function NavButton({ title }: NavbuttonProps) {
+const NavButton = ({ title }: NavbuttonProps) => {
   const ref = `#${title.toLowerCase()}`;
 
   return (
@@ -9,3 +9,5 @@ export default function NavButton({ title }: NavbuttonProps) {
     </a>
   );
 }
+
+export default NavButton;

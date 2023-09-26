@@ -3,7 +3,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { FiMoon } from "react-icons/fi";
 import { BsSun } from "react-icons/bs";
 
-export default function ThemeButton() {
+const ThemeButton = () => {
   const { theme, setTheme } = useTheme();
   const [isClient, setIsClient] = useState(false);
 
@@ -32,4 +32,6 @@ export default function ThemeButton() {
   }, [theme, toggleTheme]);
 
   return isClient ? CurrentIcon : null;
-}
+};
+
+export default ThemeButton;
