@@ -1,4 +1,5 @@
 import Head from "next/head";
+import MainSection from "~/components/MainSection/MainSection";
 
 const Home = () => {
   return (
@@ -8,7 +9,9 @@ const Home = () => {
         <meta name="description" content="developed by rafaelgolin" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main></main>
+      <main>
+        <MainSection />
+      </main>
     </>
   );
 }
