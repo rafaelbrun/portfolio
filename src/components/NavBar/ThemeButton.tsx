@@ -19,13 +19,13 @@ const ThemeButton = () => {
     return theme == "dark" ? (
       <FiMoon
         onClick={toggleTheme}
-        className="my-4 h-8 w-8 cursor-pointer"
+        className="my-4 h-6 w-6 cursor-pointer"
         role="button"
       />
     ) : (
       <BsSun
         onClick={toggleTheme}
-        className="my-4 h-8 w-8 cursor-pointer text-darkred"
+        className="my-4 h-6 w-6 cursor-pointer text-darkred"
         role="button"
       />
     );
