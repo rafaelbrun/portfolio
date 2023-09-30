@@ -8,6 +8,9 @@ export default {
       colors: {
         darkred: { DEFAULT: "#120000" },
       },
+      spacing: {
+        '0.25': '0.063rem',
+      },
       keyframes: {
         wiggle: {
           '0%, 100%': { transform: 'rotate(-6deg)' },

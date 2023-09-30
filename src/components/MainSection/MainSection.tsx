@@ -4,11 +4,11 @@ const MainSection = () => {
   return (
     <div className="mx-8 my-24 flex flex-col sm:mx-24">
       <div className="flex">
-        <b className="flex flex-row text-4xl tracking-widest lg:text-6xl">
+        <b className="flex flex-row text-4xl tracking-widest text-darkred dark:text-white lg:text-6xl">
           RAFAEL
         </b>
         <CompressedWord word="BRUN" />
-        <b className="flex flex-row text-4xl tracking-widest lg:text-6xl">
+        <b className="flex flex-row text-4xl tracking-widest text-darkred dark:text-white lg:text-6xl">
           GOLIN
         </b>
       </div>
