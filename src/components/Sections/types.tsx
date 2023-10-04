@@ -1,7 +1,8 @@
 import MainSection from "../MainSection/MainSection";
-import About from "./About";
+import Contact from "./Contact";
 import Career from "./Career";
 import Graduation from "./Graduation";
+import Skills from "./Skills";
 
 interface ISection {
   element: React.JSX.Element;
@@ -10,9 +11,10 @@ interface ISection {
 
 export enum Tabs {
   MAIN = "/",
+  SKILLS = "Skills",
   CAREER = "Career",
-  ABOUT = "About",
   GRADUATION = "Graduation",
+  CONTACT = "Contact",
 }
 
 export const SECTIONS: ISection[] = [
@@ -21,15 +23,19 @@ export const SECTIONS: ISection[] = [
     title: Tabs.MAIN,
   },
   {
+    element: <Skills />,
+    title: Tabs.SKILLS,
+  },
+  {
     element: <Career />,
     title: Tabs.CAREER,
   },
   {
-    element: <About />,
-    title: Tabs.ABOUT,
-  },
-  {
     element: <Graduation />,
     title: Tabs.GRADUATION,
+  },
+  {
+    element: <Contact />,
+    title: Tabs.CONTACT,
   },
 ];
