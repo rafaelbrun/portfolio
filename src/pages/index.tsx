@@ -1,7 +1,17 @@
 import Head from "next/head";
-import MainSection from "~/components/MainSection/MainSection";
+import React, { useMemo } from "react";
+import Section from "~/components/Section";
+import { SECTIONS } from "~/components/Sections/types";
 
 const Home = () => {
+  const renderSections = useMemo(
+    () =>
+      SECTIONS.map((section) => (
+        <Section key={section.title} title={section.title}>{section.element}</Section>
+      )),
+    []
+  );
+
   return (
     <>
       <Head>
@@ -9,11 +19,9 @@ const Home = () => {
         <meta name="description" content="developed by rafaelgolin" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <MainSection />
-      </main>
+      <main>{renderSections}</main>
     </>
   );
-}
+};
 
 export default Home;

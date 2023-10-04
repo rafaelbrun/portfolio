@@ -7,3 +7,7 @@
         @apply dark:bg-darkred bg-white
     }
 }
+
+html {
+    scroll-behavior: smooth;
+}

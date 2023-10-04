@@ -3,8 +3,8 @@ import Navbutton from "./NavButton";
 import ThemeButton from "./ThemeButton";
 import { HiMenu } from "react-icons/hi";
 import { CgClose } from "react-icons/cg";
+import { SECTIONS } from "../Sections/types";
 
-const TABS = ["Career", "Graduation", "Projects", "About"];
 const NAVBAR_DEFAULT =
   "fixed z-50 backdrop-filter backdrop-blur dark:bg-darkred/20 top-0 flex w-full items-center justify-end px-8 " +
   "sm:justify-center lg:justify-end lg:px-72";
@@ -21,7 +21,10 @@ const NavBar = () => {
   }, []);
 
   const ListOfNavbuttons = useMemo(
-    () => TABS.map((tab) => <Navbutton title={tab} key={tab} />),
+    () =>
+      SECTIONS.map((section) => (
+        <Navbutton title={section.title} key={section.title} />
+      )),
     []
   );
 
