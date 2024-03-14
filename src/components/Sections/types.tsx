@@ -10,7 +10,7 @@ interface ISection {
 }
 
 export enum Tabs {
-  MAIN = "/",
+  MAIN = "",
   SKILLS = "Skills",
   CAREER = "Career",
   GRADUATION = "Graduation",

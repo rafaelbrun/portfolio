@@ -2,7 +2,7 @@ import CompressedWord from "./CompressedWord";
 
 const MainSection = () => {
   return (
-    <div className="mx-6 my-12 flex flex-col sm:mx-24 sm:my-24">
+    <div>
       <div className="flex">
         <b className="flex flex-row text-xl tracking-widest text-darkred dark:text-white sm:text-4xl lg:text-6xl">
           RAFAEL
