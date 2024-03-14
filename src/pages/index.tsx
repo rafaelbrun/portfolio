@@ -7,7 +7,9 @@ const Home = () => {
   const renderSections = useMemo(
     () =>
       SECTIONS.map((section) => (
-        <Section key={section.title} title={section.title}>{section.element}</Section>
+        <Section key={section.title} title={section.title}>
+          {section.element}
+        </Section>
       )),
     []
   );
