@@ -1,4 +1,4 @@
-import MainSection from "../MainSection/MainSection";
+import MainSection from "./MainSection/MainSection";
 import Contact from "./Contact";
 import Career from "./Career";
 import Graduation from "./Graduation";
