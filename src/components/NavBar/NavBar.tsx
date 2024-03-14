@@ -1,5 +1,5 @@
 import { useCallback, useMemo, useState } from "react";
-import Navbutton from "./NavButton";
+import NavButton from "./NavButton";
 import ThemeButton from "./ThemeButton";
 import { HiMenu } from "react-icons/hi";
 import { CgClose } from "react-icons/cg";
@@ -20,17 +20,17 @@ const NavBar = () => {
     setIsMenuOpen((prevState) => !prevState);
   }, []);
 
-  const ListOfNavbuttons = useMemo(
+  const ListOfNavButtons = useMemo(
     () =>
       SECTIONS.map((section) => (
-        <Navbutton title={section.title} key={section.title} />
+        <NavButton title={section.title} key={section.title} />
       )),
     []
   );
 
   return (
     <div className={isMenuOpen ? NAVBAR_MENU : NAVBAR_DEFAULT} role="menubar">
-      <div className={"hidden space-x-12 sm:flex"}>{ListOfNavbuttons}</div>
+      <div className={"hidden space-x-12 sm:flex"}>{ListOfNavButtons}</div>
       <div className="flex flex-row justify-end ">
         <div className="mx-4 ms-12">
           <ThemeButton />
@@ -48,7 +48,7 @@ const NavBar = () => {
           className={`flex justify-self-center pb-3 sm:mt-0 sm:block sm:pb-0`}
         >
           <div className="my-8 flex flex-col items-center justify-center space-y-6 sm:hidden sm:space-x-6 sm:space-y-0">
-            {ListOfNavbuttons}
+            {ListOfNavButtons}
           </div>
         </div>
       )}

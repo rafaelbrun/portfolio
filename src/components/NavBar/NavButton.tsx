@@ -1,8 +1,11 @@
-import type { NavbuttonProps } from "~/interfaces/NavButton";
 import { Tabs } from "../Sections/types";
 import Link from "next/link";
 
-const NavButton = ({ title }: NavbuttonProps) => {
+type Props = {
+  title: Tabs;
+};
+
+const NavButton = ({ title }: Props) => {
   const ref = `#${title.toLowerCase()}`;
 
   const isMain = title === Tabs.MAIN;
@@ -11,7 +14,7 @@ const NavButton = ({ title }: NavbuttonProps) => {
     <div className="group flex flex-col self-end">
       <Link
         href={ref}
-        className="self-end text-xs sm:text-base tracking-wider text-darkred dark:text-white sm:text-start"
+        className="self-end text-xs tracking-wider text-darkred dark:text-white sm:text-start sm:text-base"
       >
         {isMain ? "RG" : title}
       </Link>
