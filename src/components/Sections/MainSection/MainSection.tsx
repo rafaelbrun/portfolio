@@ -1,6 +1,7 @@
 import AppButton from "~/components/AppButton/AppButton";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
 import CompressedWord from "./CompressedWord";
+import { shantell } from "~/utils/fonts";
 
 const MainSection = () => {
   const openCurriculum = () => {
@@ -13,7 +14,7 @@ const MainSection = () => {
   };
 
   return (
-    <div>
+    <div className="flex h-screen flex-col">
       <div className="flex">
         <b className="flex flex-row text-xl tracking-widest text-darkred dark:text-white sm:text-4xl lg:text-6xl">
           RAFAEL
@@ -34,6 +35,12 @@ const MainSection = () => {
         icon={<ArrowTopRightOnSquareIcon />}
         className="mt-3"
       />
+      <div
+        className={`flex h-full w-full items-center justify-center text-xxl ${shantell.className}`}
+      >
+        <p>{`<`}</p>
+        <p>{`/>`}</p>
+      </div>
     </div>
   );
 };
