@@ -1,17 +1,24 @@
+import { cn } from "~/utils/common";
+
 type Props = {
   onClick: () => void;
   title: string;
   icon?: React.ReactNode;
+  className?: string;
 };
 
-const AppButton = ({ onClick, title, icon }: Props) => {
+const AppButton = ({ onClick, title, icon, className = "" }: Props) => {
   return (
     <button
       onClick={onClick}
-      className="flex flex-row gap-2 rounded-full bg-red-700 px-6 py-2 text-white hover:bg-red-800"
+      className={cn({
+        "flex flex-row w-fit items-start gap-1 rounded-full bg-red-700 px-2 py-1 text-xs text-white hover:bg-red-800 sm:gap-2 sm:px-6 sm:py-2 sm:text-base":
+          true,
+        [className]: true,
+      })}
     >
       {title}
-      {icon && icon}
+      <div className="flex h-3 w-3 sm:h-5 sm:w-5">{icon && icon}</div>
     </button>
   );
 };

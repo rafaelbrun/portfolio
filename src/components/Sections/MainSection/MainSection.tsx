@@ -23,21 +23,16 @@ const MainSection = () => {
           GOLIN
         </b>
       </div>
-      <div className="flex flex-col sm:flex-row">
-        <p className="text-xs font-thin tracking-widest sm:text-sm lg:my-4 lg:text-2xl">
-          Software Developer
-        </p>
-        <p className="invisible h-0 text-xs font-thin tracking-widest sm:visible sm:mx-4 sm:h-auto sm:text-sm lg:my-4 lg:text-2xl">
-          |
-        </p>
-        <p className="text-xs font-thin tracking-widest sm:text-sm lg:my-4 lg:text-2xl">
-          Computer Engineer
-        </p>
+      <div className="my-2 flex flex-col text-xs font-thin tracking-widest sm:flex-row sm:text-sm lg:my-4 lg:text-2xl">
+        <p>Software Developer</p>
+        <p className="invisible h-0 sm:visible sm:mx-4 sm:h-auto">|</p>
+        <p>Computer Engineer</p>
       </div>
       <AppButton
         onClick={openCurriculum}
         title="Curriculum"
-        icon={<ArrowTopRightOnSquareIcon width={20} height={20} />}
+        icon={<ArrowTopRightOnSquareIcon />}
+        className="mt-3"
       />
     </div>
   );
