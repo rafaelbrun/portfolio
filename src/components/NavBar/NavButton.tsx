@@ -11,7 +11,7 @@ const NavButton = ({ title }: NavbuttonProps) => {
     <div className="group flex flex-col self-end">
       <Link
         href={ref}
-        className="self-end tracking-wider text-darkred dark:text-white sm:text-start"
+        className="self-end text-xs sm:text-base tracking-wider text-darkred dark:text-white sm:text-start"
       >
         {isMain ? "RG" : title}
       </Link>
