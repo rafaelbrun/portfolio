@@ -1,6 +1,17 @@
+import AppButton from "~/components/AppButton/AppButton";
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
 import CompressedWord from "./CompressedWord";
 
 const MainSection = () => {
+  const openCurriculum = () => {
+    const newWindow = window.open(
+      "https://drive.google.com/file/d/1fZ0rgnuLtAOsFhPYKa6PytBYOE6Y7Vzl/view?usp=sharing",
+      "_blank",
+      "noopener,noreferrer"
+    );
+    if (newWindow) newWindow.opener = null;
+  };
+
   return (
     <div>
       <div className="flex">
@@ -23,6 +34,11 @@ const MainSection = () => {
           Computer Engineer
         </p>
       </div>
+      <AppButton
+        onClick={openCurriculum}
+        title="Curriculum"
+        icon={<ArrowTopRightOnSquareIcon width={20} height={20} />}
+      />
     </div>
   );
 };
