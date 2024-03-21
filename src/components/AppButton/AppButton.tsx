@@ -12,8 +12,10 @@ const AppButton = ({ onClick, title, icon, className = "" }: Props) => {
     <button
       onClick={onClick}
       className={cn({
-        "flex flex-row w-fit items-start gap-1 rounded-full bg-red-700 px-2 py-1 text-xs text-white hover:bg-red-800 sm:gap-2 sm:px-6 sm:py-2 sm:text-base":
+        "flex w-fit flex-row items-center gap-1 rounded-full bg-red-700 px-2 py-1":
           true,
+        "text-xs font-bold text-white": true,
+        "hover:bg-red-800 sm:gap-2 sm:px-6 sm:py-2 sm:text-base": true,
         [className]: true,
       })}
     >
