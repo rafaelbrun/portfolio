@@ -54,7 +54,7 @@ const MainSection = () => {
         />
       </div>
       <div
-        className={`flex h-full w-full items-center justify-center text-xxl ${shantell.className}`}
+        className={`flex h-full w-full items-center justify-center text-9xl sm:text-xxl ${shantell.className}`}
       >
         <p>{`<`}</p>
         <p>{`/>`}</p>
