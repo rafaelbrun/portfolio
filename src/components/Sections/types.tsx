@@ -1,7 +1,7 @@
 import MainSection from "./MainSection/MainSection";
 import Contact from "./Contact";
 import Career from "./Career";
-import Graduation from "./Graduation";
+import Education from "./Education";
 import Skills from "./Skills";
 
 interface ISection {
@@ -13,7 +13,7 @@ export enum Tabs {
   MAIN = "",
   SKILLS = "Skills",
   CAREER = "Career",
-  GRADUATION = "Graduation",
+  EDUCATION = "Education",
   CONTACT = "Contact",
 }
 
@@ -31,8 +31,8 @@ export const SECTIONS: ISection[] = [
     title: Tabs.CAREER,
   },
   {
-    element: <Graduation />,
-    title: Tabs.GRADUATION,
+    element: <Education />,
+    title: Tabs.EDUCATION,
   },
   {
     element: <Contact />,
