@@ -53,6 +53,22 @@ const MainSection = () => {
           icon={<ArrowTopRightOnSquareIcon />}
         />
       </div>
+      <div className="mt-8 flex max-w-xl flex-col gap-2 text-xs sm:text-base">
+        <p>
+          Constantly striving to create high-quality software, which I achieve
+          through careful development, implementation of tests and thorough code
+          reviews.
+        </p>
+        <p>
+          I’ve experience dealing daily with developers, QA engineers, designers
+          and Project Managers from around the globe, with my objective, clean
+          and professional communication I’m able to maintain a good relation
+          with whomever.
+        </p>
+        I am a quick learner and have a strong interest in emerging
+        technologies. During my career, I’ve learned new stacks and I am always
+        open to exploring new paths.
+      </div>
       <div
         className={`flex h-full w-full items-center justify-center text-9xl sm:text-xxl ${shantell.className}`}
       >
