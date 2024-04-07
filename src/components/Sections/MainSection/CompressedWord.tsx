@@ -1,3 +1,5 @@
+import { cn } from "~/utils/common";
+
 const CompressedWord = ({ word }: { word: string }) => {
   const firstLetter = word.split("")[0];
   const restOfWord = word.split("").slice(1).join("");
@@ -10,7 +12,15 @@ const CompressedWord = ({ word }: { word: string }) => {
       <b className="text-xl group-hover:opacity-0 group-hover:transition-opacity sm:text-4xl lg:text-6xl">
         .
       </b>
-      <b className="-ms-1 w-0 -translate-x-8 transform text-xl tracking-widest opacity-0 transition-all group-hover:w-12 group-hover:translate-x-0 group-hover:opacity-100 sm:text-4xl lg:text-6xl lg:group-hover:w-36">
+      <b
+        className={cn({
+          "-ms-1 w-0 -translate-x-8 transform text-xl tracking-widest": true,
+          "opacity-0 transition-all group-hover:w-12 group-hover:translate-x-0":
+            true,
+          "group-hover:opacity-100 sm:text-4xl lg:text-6xl lg:group-hover:w-36":
+            true,
+        })}
+      >
         {restOfWord}
       </b>
     </div>
