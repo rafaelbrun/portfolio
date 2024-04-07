@@ -34,7 +34,7 @@ const MainSection = () => {
       <div className="mt-3 flex h-fit items-center gap-1 sm:gap-2">
         <Link href="https://github.com/rafaelbrun" target="_blank">
           <div className="relative h-6 w-6 rounded-full bg-white hover:opacity-80 sm:h-10 sm:w-10">
-            <Image src="/images/github-logo.png" layout="fill" alt="Github" />
+            <Image src="/images/github-logo.png" fill alt="Github" />
           </div>
         </Link>
         <Link href="https://www.linkedin.com/in/rgolin/" target="_blank">
