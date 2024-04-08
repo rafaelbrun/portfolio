@@ -53,7 +53,7 @@ const MainSection = () => {
           icon={<ArrowTopRightOnSquareIcon />}
         />
       </div>
-      <div className="mt-8 flex max-w-xl flex-col gap-2 text-xs sm:text-base">
+      <div className="mt-8 flex max-w-xl flex-col gap-2 text-xs sm:text-base text-justify">
         <p>
           Constantly striving to create high-quality software, which I achieve
           through careful development, implementation of tests and thorough code
