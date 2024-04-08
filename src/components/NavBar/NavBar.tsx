@@ -4,6 +4,7 @@ import ThemeButton from "./ThemeButton";
 import { HiMenu } from "react-icons/hi";
 import { CgClose } from "react-icons/cg";
 import { SECTIONS } from "../Sections/types";
+import { cn } from "~/utils/common";
 
 const NAVBAR_DEFAULT =
   "fixed z-50 backdrop-filter backdrop-blur dark:bg-darkred/20 top-0 flex w-full items-center justify-end px-4 " +
@@ -36,11 +37,24 @@ const NavBar = () => {
           <ThemeButton />
         </div>
         <div className="text-darkred-3xl my-4 flex cursor-pointer dark:text-white sm:hidden">
-          {!isMenuOpen ? (
-            <HiMenu onClick={toggleMenu} className="h-4 w-4 sm:h-6 sm:w-6" />
-          ) : (
-            <CgClose onClick={toggleMenu} className="h-4 w-4 sm:h-6 sm:w-6" />
-          )}
+          <HiMenu
+            onClick={toggleMenu}
+            className={cn({
+              "absolute right-3 h-4 w-4 transition duration-300 sm:h-6 sm:w-6":
+                true,
+              "rotate-0 opacity-100": !isMenuOpen,
+              "rotate-90 opacity-0": isMenuOpen,
+            })}
+          />
+          <CgClose
+            onClick={toggleMenu}
+            className={cn({
+              "absolute right-3 h-4 w-4 transition duration-300 sm:h-6 sm:w-6":
+                true,
+              "rotate-90 opacity-100": isMenuOpen,
+              "rotate-0 opacity-0": !isMenuOpen,
+            })}
+          />
         </div>
       </div>
       {isMenuOpen && (

@@ -3,10 +3,10 @@ import AppLink from "../AppLink/AppLink";
 const Career = () => {
   return (
     <div>
-      <ul className="flex flex-col gap-8">
+      <ul className="flex flex-col gap-8 text-sm md:text-base">
         <li>
-          <b className="text-lg">SOLENNIAL</b> - Front-end Software Developer |
-          October 2023 - Present
+          <b className="text-base md:text-lg">SOLENNIAL</b> - Front-end Software
+          Developer | October 2023 - Present
           <ul className="ms-4 flex flex-col gap-2">
             <li>o Languages and Frameworks - NextJS using Typescript; </li>
             <li>
@@ -32,8 +32,8 @@ const Career = () => {
           </ul>
         </li>
         <li>
-          <b className="text-lg">PROFUSION</b> - Front-end Software Developer |
-          September 2021 - April 2023
+          <b className="text-base md:text-lg">PROFUSION</b> - Front-end Software
+          Developer | September 2021 - April 2023
           <ul className="ms-4 flex flex-col gap-2">
             <li>
               o Languages and Frameworks - React Native using Typescript and
@@ -87,8 +87,8 @@ const Career = () => {
           </ul>
         </li>
         <li>
-          <b className="text-lg">TOTEM TI</b> - Fullstack Junior Developer |
-          April 2021 - September 2021
+          <b className="text-base md:text-lg text-">TOTEM TI</b> - Fullstack Junior
+          Developer | April 2021 - September 2021
           <ul className="ms-4 flex flex-col gap-2">
             <li>
               o Languages and Frameworks - Angular using Typescript, Spring Boot

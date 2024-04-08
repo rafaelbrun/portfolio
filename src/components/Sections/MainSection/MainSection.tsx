@@ -26,7 +26,7 @@ const MainSection = () => {
           GOLIN
         </b>
       </div>
-      <div className="my-2 flex flex-col text-xs font-thin tracking-widest sm:flex-row sm:text-sm lg:my-4 lg:text-2xl">
+      <div className="my-2 flex flex-col text-sm font-thin tracking-widest sm:flex-row sm:text-sm lg:my-4 lg:text-2xl">
         <p>Software Developer</p>
         <p className="invisible h-0 sm:visible sm:mx-4 sm:h-auto">|</p>
         <p>Computer Engineer</p>
@@ -53,7 +53,7 @@ const MainSection = () => {
           icon={<ArrowTopRightOnSquareIcon />}
         />
       </div>
-      <div className="mt-8 flex max-w-xl flex-col gap-2 text-xs sm:text-base text-justify">
+      <div className="mt-8 flex max-w-xl flex-col gap-2 text-justify text-sm sm:text-base">
         <p>
           Constantly striving to create high-quality software, which I achieve
           through careful development, implementation of tests and thorough code
