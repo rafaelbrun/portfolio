@@ -7,7 +7,7 @@ import { SECTIONS } from "../Sections/types";
 import { cn } from "~/utils/common";
 
 const NAVBAR_DEFAULT =
-  "fixed z-50 backdrop-filter backdrop-blur dark:bg-darkred/20 top-0 flex w-full items-center justify-end px-4 " +
+  "fixed z-50 backdrop-filter backdrop-blur bg-white/50 dark:bg-darkred/50 top-0 flex w-full items-center justify-end px-4 " +
   "sm:justify-center lg:justify-end lg:px-72";
 const NAVBAR_MENU =
   "fixed bg-red-400/50 dark:bg-red-950/50 backdrop-filter backdrop-blur sm:bg-white sm:dark:bg-transparent top-0 " +
