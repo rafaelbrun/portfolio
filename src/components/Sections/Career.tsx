@@ -1,3 +1,5 @@
+import AppLink from "../AppLink/AppLink";
+
 const Career = () => {
   return (
     <div>
@@ -13,11 +15,17 @@ const Career = () => {
             </li>
             <li>
               o Project
-              <ul className="ms-4 flex flex-col gap-2">
+              <ul className="ms-4 flex flex-col">
                 <li>
-                  ▪ Solennial (NextJS | React) - Working as a solo front-end
-                  engineer, maintaining deployments, developing features,
-                  design, CD/CI, documentation, analytics and others.
+                  <AppLink
+                    text={"▪ Solennial (NextJS | React)"}
+                    href="https://solennial.com/"
+                    isBlank
+                    isUnderlined
+                  />
+                  - Working as a solo front-end engineer, maintaining
+                  deployments, developing features, design, CD/CI,
+                  documentation, analytics and others.
                 </li>
               </ul>
             </li>
@@ -40,28 +48,39 @@ const Career = () => {
               o Projects
               <ul className="ms-4 flex flex-col gap-2">
                 <li>
-                  ▪ Audacy (React Native) - Worked as a team member, after
-                  joining the project I managed to significantly improve the
-                  Android app performance by reducing unnecessary re-renders of
-                  the app and improving implementation of the media player
-                  bridge.
+                  <AppLink
+                    text={"▪ Audacy (React Native)"}
+                    href="https://www.audacy.com/about"
+                    isBlank
+                    isUnderlined
+                  />
+                  - Worked as a team member, after joining the project I managed
+                  to significantly improve the Android app performance by
+                  reducing unnecessary re-renders of the app and improving
+                  implementation of the media player bridge.
                 </li>
                 <li>
-                  ▪ Traeger (Native Android) - Worked as a team member where I
-                  helped with the implementation of new features and bug fixes
-                  during the sprints. ▪ PLI (React Native) - Worked as a team
-                  member from the begin to the end of the project, helped with
-                  initial configuration of the software, new features, bug fixes
-                  and a deep dive into video streaming with the
-                  react-native-video library.
+                  <AppLink
+                    text={"▪ Traeger (Native Android)"}
+                    href="https://www.traeger.com/app"
+                    isBlank
+                    isUnderlined
+                  />
+                  - Worked as a team member where I helped with the
+                  implementation of new features and bug fixes during the
+                  sprints. ▪ PLI (React Native) - Worked as a team member from
+                  the begin to the end of the project, helped with initial
+                  configuration of the software, new features, bug fixes and a
+                  deep dive into video streaming with the react-native-video
+                  library.
                 </li>
                 <li>
-                  ▪ quickstart-android (Internal Profusion Project) - Worked as
-                  a team member (1 year) and a team leader (6 months), got the
-                  opportunity to lead a team of 8 developers, where I would set
-                  our goals for the sprint, interact with the client to
-                  understand the priorities, and guarantee that the team would
-                  be performing as expected.
+                  <b>▪ quickstart-android (Internal Profusion Project)</b> -
+                  Worked as a team member (1 year) and a team leader (6 months),
+                  got the opportunity to lead a team of 8 developers, where I
+                  would set our goals for the sprint, interact with the client
+                  to understand the priorities, and guarantee that the team
+                  would be performing as expected.
                 </li>
               </ul>
             </li>
