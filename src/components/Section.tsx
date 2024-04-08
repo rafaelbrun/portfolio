@@ -1,4 +1,5 @@
-import type { Tabs } from "./Sections/types";
+import { cn } from "~/utils/common";
+import { Tabs } from "./Sections/types";
 
 const Section = ({
   children,
@@ -10,10 +11,13 @@ const Section = ({
   return (
     <section
       id={title.toLowerCase()}
-      className="mx-8 flex min-h-screen flex-col sm:mx-24"
+      className={cn({
+        "flex h-fit flex-col bg-white dark:bg-darkred sm:px-24": true,
+        "mt-40 py-12": title !== Tabs.MAIN,
+      })}
     >
       {!!title && (
-        <b className="mb-6 mt-12 flex flex-row  text-4xl tracking-widest text-darkred dark:text-white lg:text-6xl">
+        <b className="mb-6 flex flex-row  text-4xl tracking-widest text-darkred dark:text-white lg:text-6xl">
           {title.toUpperCase()}
         </b>
       )}

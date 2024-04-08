@@ -70,7 +70,7 @@ const MainSection = () => {
         open to exploring new paths.
       </div>
       <div
-        className={`flex h-full w-full items-center justify-center text-9xl sm:text-xxl ${shantell.className}`}
+        className={`flex h-full w-full items-center justify-center text-9xl sm:text-xxl ${shantell.className} text-darkred dark:text-white`}
       >
         <p>{`<`}</p>
         <p>{`/>`}</p>
