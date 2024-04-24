@@ -1,5 +1,4 @@
 import MainSection from "./MainSection/MainSection";
-import Contact from "./Contact";
 import Career from "./Career";
 import Education from "./Education";
 import Skills from "./Skills";
@@ -14,7 +13,6 @@ export enum Tabs {
   SKILLS = "Skills",
   CAREER = "Career",
   EDUCATION = "Education",
-  CONTACT = "Contact",
 }
 
 export const SECTIONS: ISection[] = [
@@ -33,9 +31,5 @@ export const SECTIONS: ISection[] = [
   {
     element: <Education />,
     title: Tabs.EDUCATION,
-  },
-  {
-    element: <Contact />,
-    title: Tabs.CONTACT,
   },
 ];
