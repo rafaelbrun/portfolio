@@ -14,7 +14,7 @@ const NavButton = ({ title }: Props) => {
     <div className="group flex flex-col self-end">
       <Link
         href={ref}
-        className="self-end text-xs tracking-wider text-darkred dark:text-white sm:text-start sm:text-base"
+        className="self-end text-xs tracking-wider  sm:text-start sm:text-base"
       >
         {isMain ? (
           <div className="m-0 flex p-0">
@@ -25,7 +25,7 @@ const NavButton = ({ title }: Props) => {
           title
         )}
       </Link>
-      <span className="h-0.25 max-w-0 transform bg-darkred transition-all group-hover:max-w-full dark:bg-white" />
+      <span className="h-0.25 max-w-0 transform bg-darkred transition-all group-hover:max-w-full dark:bg-palered" />
     </div>
   );
 };

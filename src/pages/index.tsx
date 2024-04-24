@@ -1,5 +1,6 @@
 import Head from "next/head";
 import React, { useMemo } from "react";
+import Footer from "~/components/Footer/Footer";
 import Section from "~/components/Section";
 import { SECTIONS } from "~/components/Sections/types";
 
@@ -22,6 +23,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>{renderSections}</main>
+      <Footer />
     </>
   );
 };

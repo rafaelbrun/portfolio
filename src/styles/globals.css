@@ -4,7 +4,7 @@
 
 @layer base{
     body {
-        @apply dark:bg-darkred bg-white
+        @apply dark:bg-darkred dark:text-palered text-darkred bg-palered
     }
 }
 

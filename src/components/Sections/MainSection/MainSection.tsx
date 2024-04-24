@@ -18,11 +18,11 @@ const MainSection = () => {
   return (
     <div className="flex h-screen flex-col">
       <div className="flex">
-        <b className="flex flex-row text-xl tracking-widest text-darkred dark:text-white sm:text-4xl lg:text-6xl">
+        <b className="flex flex-row text-xl tracking-widest  sm:text-4xl lg:text-6xl">
           RAFAEL
         </b>
         <CompressedWord word="BRUN" />
-        <b className="flex flex-row text-xl tracking-widest text-darkred dark:text-white sm:text-4xl lg:text-6xl">
+        <b className="flex flex-row text-xl tracking-widest  sm:text-4xl lg:text-6xl">
           GOLIN
         </b>
       </div>
@@ -70,7 +70,7 @@ const MainSection = () => {
         open to exploring new paths.
       </div>
       <div
-        className={`flex h-full w-full items-center justify-center text-9xl sm:text-xxl ${shantell.className} text-darkred dark:text-white`}
+        className={`flex h-full w-full items-center justify-center text-9xl sm:text-xxl ${shantell.className} `}
       >
         <p>{`<`}</p>
         <p>{`/>`}</p>

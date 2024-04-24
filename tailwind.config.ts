@@ -6,7 +6,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        darkred: { DEFAULT: "#120000" },
+        darkred: {
+          DEFAULT: "#120000",
+          "600": "#7C3626",
+          "700": "#2D080A",
+        },
+        palered: { DEFAULT: "#FFCDBC" },
+        pumpkin: { DEFAULT: "#F5853F" },
       },
       spacing: {
         "0.25": "0.063rem",

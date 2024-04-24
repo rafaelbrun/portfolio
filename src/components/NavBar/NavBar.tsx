@@ -36,7 +36,7 @@ const NavBar = () => {
         <div className="mx-4 ms-12">
           <ThemeButton />
         </div>
-        <div className="text-darkred-3xl my-4 flex cursor-pointer dark:text-white sm:hidden">
+        <div className="text-darkred-3xl my-4 flex cursor-pointer sm:hidden">
           <HiMenu
             onClick={toggleMenu}
             className={cn({
