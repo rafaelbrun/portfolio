@@ -4,7 +4,7 @@ import Education from "./Education";
 import Skills from "./Skills";
 
 interface ISection {
-  element: React.JSX.Element;
+  element: JSX.Element;
   title: Tabs;
 }
 
